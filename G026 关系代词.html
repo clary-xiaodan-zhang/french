@@ -14,107 +14,160 @@
 
 <body>
 
-	<h1 id="header"><a href="https://drive.google.com/drive/folders/15mzS8aWlilhmLUdjIvz4sG9c0eOwcm-p?usp=sharing">G026 关系代词</a></h1>
+	<div class="header" id="myHeader">
+		<a href="index.html"><h3>Home</h3></a>
+	</div>
+		<script>
+			window.onscroll = function() {myFunction()};
+			
+			var header = document.getElementById("myHeader");
+			var sticky = header.offsetTop;
+			
+			function myFunction() {
+				if (window.pageYOffset > sticky) {
+					header.classList.add("sticky");
+				} else {
+					header.classList.remove("sticky");
+				}
+			}
+		</script>
 
-    <div id="table-of-contents">
-        <h2>Table of Contents</h2>
-        <ol>
-            <li><a href="虚拟式的引导结构"></a></li>
-            <li><a href="虚拟式vs直陈式"></a></li>
-            <li><a href="虚拟式—过去时(Subjonctif Passé)"></a></li>
-            <li><a href="虚拟式过去时vs虚拟式现在时"></a></li>
-        </ol>
-    </div>
+	<div class="content">
 
-	<table>
-	<tbody>
-		<tr>
-			<th colspan="6">关系代词</th>
-		</tr>
-		<tr>
-			<th rowspan="2">关系代词</th>
-			<th rowspan="2">代替成分</th>
-			<th rowspan="2">前缀</th>
-			<th colspan="2">例句</th>
-			<th rowspan="2">⚠️</th>
-		</tr>
-		<tr>
-			<th>用关系代词</th>
-			<th>还原</th>
-		</tr>
-		<tr>
-			<td>qui</td>
-			<td>主语</td>
-			<td></td>
-			<td>Mon frère <b>qui</b> a appris le chinois ira en Chine l'année prochaine.</td>
-			<td>Mon frère a appris le chinois. <b>Il</b> ira en Chine.</td>
-		</tr>
-		<tr>
-			<td>que</td>
-			<td>直接宾语</td>
-			<td></td>
-			<td>En Corse, il y a un village <b>que</b> j'aime beaucoup.</td>
-			<td>En Corse, il y a un village. J'aime beaucoup <b>ce village</b>.</td> 
-		</tr>
-		<tr>
-			<td rowspan="4">où</td>
-			<td rowspan="3">地点状语</td>
-			<td></td>
-			<td>La Bourgogne est la région <b>où</b> il passe ses vacances.</td>
-			<td>La Bourgogne est une région. Il passe ses vacances <b>dans cette région</b>.</td>
-		</tr>
-		<tr>
-			<td>par où</td>
-			<td>C'est la région <b>par où</b> je passe quand je vais dans le Jura.</td>
-			<td>C'est une région. Je passe <b>par cette région</b> quand je vais dans le Jura.</td>
-		</tr>
-		<tr>
-			<td>d'où</td>
-			<td>C'est la région <b>d'où</b> je viens.</td>
-			<td>C'est une région. Je viens <b>de cette région</b>.</td>
-		</tr>
-		<tr>
-			<td>时间状语</td>
-			<td></td>
-			<td>Il pleuvait le jour <b>où</b> on est parti.</td>
-			<td>Il pleuvait ce jour-là. On est parti <b>ce jour-là</b>.</td>
-		</tr>
-		<tr>
-			<td rowspan="10">dont</td>
-			<td>动词后de引导的补语（间接宾语）</td>
-			<td></td>
-			<td>Caroline est l'amie <b>dont</b> je t'ai parlé.</td>
-			<td>Caroline est une amie. Je t'ai parlé <b>de cette amie</b>.</td>
-		</tr>
-		<tr>
-			<td>形容词后de引导的补语</td>
-			<td></td>
-			<td>Il a pris dans ses bras son fils <b>dont</b> il est très fier.</td>
-			<td> Il a pris son fils dans ses bras. Il est très fier <b>de son fils</b>.</td>
-		</tr>
-		<tr>
-			<td>名词后de引导的补语</td>
-			<td></td>
-			<td>Voilà mon ami <b>dont</b> le père est journaliste.</td>
-			<td>Voilà mon ami. Le père <b>de mon ami</b> est journaliste.</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-		</tr>
+		<h1 id="header"><a href="https://drive.google.com/drive/folders/15mzS8aWlilhmLUdjIvz4sG9c0eOwcm-p?usp=sharing">G026 关系代词</a></h1>
 
-	</tbody>
-	</table>
+		<div id="table-of-contents">
+			<h2>Table of Contents</h2>
+			<ol>
+				<li><a href="#简单关系代词">简单关系代词</a></li>
+				<li><a href="#复合关系代词">复合关系代词</a></li>
+			</ol>
+		</div>
 
-	<button>
-        <a href="header">
-            Back to Top
-        </a>
-  </button>
+		<table id="简单关系代词">
+		<tbody>
+			<tr>
+				<th colspan="6">简单关系代词</th>
+			</tr>
+			<tr>
+				<th rowspan="2">关系代词</th>
+				<th rowspan="2">代替成分</th>
+				<th rowspan="2">前缀</th>
+				<th colspan="2">例句</th>
+				<th rowspan="2">⚠️</th>
+			</tr>
+			<tr>
+				<th>用关系代词</th>
+				<th>还原</th>
+			</tr>
+			<tr>
+				<td>qui</td>
+				<td>主语</td>
+				<td></td>
+				<td>Mon frère <b>qui</b> a appris le chinois ira en Chine l'année prochaine.</td>
+				<td>Mon frère a appris le chinois. <b>Il</b> ira en Chine.</td>
+			</tr>
+			<tr>
+				<td>que</td>
+				<td>直接宾语</td>
+				<td></td>
+				<td>En Corse, il y a un village <b>que</b> j'aime beaucoup.</td>
+				<td>En Corse, il y a un village. J'aime beaucoup <b>ce village</b>.</td> 
+			</tr>
+			<tr>
+				<td rowspan="5">où</td>
+				<td rowspan="4">地点状语</td>
+				<td rowspan="2"></td>
+				<td>La Bourgogne est la région <b>où</b> il passe ses vacances.</td>
+				<td>La Bourgogne est une région. Il passe ses vacances <b>dans cette région</b>.</td>
+			</tr>
+			<tr>
+				<td>Voici l'armoire <b>où</b> vous rangerez vos affaires.</td>
+				<td>Voici une armoire. Vous rangerez vos affaires <b>dans cette armoire</b>.</td>
+			</tr>
+			<tr>
+				<td>par où</td>
+				<td>C'est la région <b>par où</b> je passe quand je vais dans le Jura.</td>
+				<td>C'est une région. Je passe <b>par cette région</b> quand je vais dans le Jura.</td>
+			</tr>
+			<tr>
+				<td>d'où</td>
+				<td>C'est la région <b>d'où</b> je viens.</td>
+				<td>C'est une région. Je viens <b>de cette région</b>.</td>
+			</tr>
+			<tr>
+				<td>时间状语</td>
+				<td></td>
+				<td>Il pleuvait le jour <b>où</b> on est parti.</td>
+				<td>Il pleuvait ce jour-là. On est parti <b>ce jour-là</b>.</td>
+			</tr>
+			<tr>
+				<td rowspan="10">dont</td>
+				<td>de引导的补语，在动词后 = 间接宾语</td>
+				<td></td>
+				<td>Caroline est l'amie <b>dont</b> je t'ai parlé.</td>
+				<td>Caroline est une amie. Je t'ai parlé <b>de cette amie</b>.</td>
+			</tr>
+			<tr>
+				<td>de引导的补语，在形容词后</td>
+				<td></td>
+				<td>Il a pris dans ses bras son fils <b>dont</b> il est très fier.</td>
+				<td> Il a pris son fils dans ses bras. Il est très fier <b>de son fils</b>.</td>
+			</tr>
+			<tr>
+				<td rowspan="2">de引导的补语，在名词后</td>
+				<td rowspan="2"></td>
+				<td>Voilà mon ami <b>dont</b> le père est journaliste.</td>
+				<td>Voilà mon ami. Le père <b>de mon ami</b> est journaliste.</td>
+			</tr>
+			<tr>
+				<td>Le service <b>dont</b> vous faites partie est ici.</td>
+				<td>Le service est ici. Vous faites partie <b>de ce service</b>.</td>
+			</tr>
+		</tbody>
+		</table>
+
+		<table id="复合关系代词">
+			<tbody>
+				<tr>
+					<th colspan="6">复合关系代词</th>
+				</tr>
+				<tr>
+					<th rowspan="2">关系代词</th>
+					<th rowspan="2">代替成分</th>
+					<th rowspan="2">前缀</th>
+					<th colspan="2">例句</th>
+					<th rowspan="2">⚠️</th>
+				</tr>
+				<tr>
+					<th>用关系代词</th>
+					<th>还原</th>
+				</tr>
+				<tr>
+					<td rowspan="10">lequel</td>
+					<td>à引导的补语</td>
+					<td>à + lequel = auquel</td>
+					<td>Voici le règlement <b>auquel</b> nous sommes très attachés. </td>
+					<td>Voici un règlement. Nous sommes très attachés <b>à ce règlement</b>.</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+		
+			</tbody>
+		</table>
+
+		<button>
+					<a href="header">
+							Back to Top
+					</a>
+		</button>
+		
+	</div>	
 
 </body>
 </html>
+
