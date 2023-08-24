@@ -22,163 +22,186 @@
         object-position: center;
       }
       .search-bar {
-        
+
       }
+
     </style>
   </head>
+
   <body>
 
-    <img class="background" src="Images/background.jpg" alt="background">
+    <div class="top-container">
+      <img class="background" src="Images/background.jpg" alt="background">
+    </div>
+    
+    <div class="header" id="myHeader">
+      <h1>法语语法</h1>
+    </div>
+      <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+      </script>
 
-    <h1>法语语法</h1>
+    <div class="content">
+    
+      <input class="search-bar" type="text" placeholder="Search">
 
-    <input class="search-bar" type="text" placeholder="Search">
+      <h2>目录</h2>
+        
+      <ol>
+        <li>
+          <a href="G001 表达条件的连词（短语）.html" target="_blank">
+            G001 表达条件的连词（短语）
+          </a>
+        </li>
+        <li>
+          <a href="G002 强调结构（WIP）.html" target="_blank">
+            G002 强调结构（WIP） 
+          </a>
+        </li>
+        <li>
+          <a href="G003 表达未来时间的介词.html" target="_blank">
+            G003 表达未来时间的介词
+          </a>
+        </li>
+        <li>
+          <a href="G004代词.html" target="_blank">
+            G004 代词
+          </a>
+        </li>
+        <li>
+          <a href="G005 代动词（WIP）.html" target="_blank">
+            G005 代动词（WIP）
+          </a>
+        </li>
+        <li>
+          <a href="G006 什么时候必须联诵? 什么时候禁止联诵?（WIP）.html" target="_blank">
+            G006 什么时候必须联诵? 什么时候禁止联诵?（WIP）
+          </a>
+        </li>
+        <li>
+          <a href="G007 否定结构（WIP）.html" target="_blank">
+            G007 否定结构（WIP）
+          </a>
+        </li>
+        <li>
+          <a href="G008 虚拟式的用法.html" target="_blank">
+            G008 虚拟式的用法
+          </a>
+        </li>
+        <li>
+          <a href="G009 直陈式的用法.html" target="_blank">
+            G009 直陈式的用法
+          </a>
+        </li>
+        <li>
+          <a href="G010 直陈式 先将来时 (Indicatif Futur Antérieur) 用法.html" target="_blank">
+            G010 直陈式 先将来时 (Indicatif Futur Antérieur) 用法
+          </a>
+        </li>
+        <li>
+          <a href="G011 直陈式 简单过去时 (Indicatif Passé Simple) 用法.html" target="_blank">
+            G011 直陈式 简单过去时 (Indicatif Passé Simple) 用法
+          </a>
+        </li>
+        <li>
+          <a href="G012 条件式的用法.html" target="_blank">
+            G012 条件式的用法
+          </a>
+        </li>
+        <li>
+          <a href="G013 疑问句的倒装.html" target="_blank">
+            G013 疑问句的倒装
+          </a>
+        </li>
+        <li>
+          <a href="G014 被动结构.html" target="_blank">
+            G014 被动结构
+          </a>
+        </li>
+        <li>
+          <a href="G015 询问和回答原因和结果.html" target="_blank">
+            G015 询问和回答原因和结果
+          </a>
+        </li>
+        <li>
+          <a href="G016 转折或对比词.html" target="_blank">
+            G016 转折或对比词
+          </a>
+        </li>
+        <li>
+          <a href="G017 感叹句.html" target="_blank">
+            G017 感叹句
+          </a>
+        </li>
+        <li>
+          <a href="G018 几分之几的表达.html" target="_blank">
+            G018 几分之几的表达
+          </a>
+        </li>
+        <li>
+          <a href="G019 动词 + à:de + inf..html" target="_blank">
+            G019 动词 + à/de + inf.
+          </a>
+        </li>
+        <li>
+          <a href="G020 发音.html" target="_blank">
+            G020 发音
+          </a>
+        </li>
+        <li>
+          <a href="G021 补语.html" target="_blank">
 
-    <h2>目录</h2>
-      
-    <ol>
-      <li>
-        <a href="G001 表达条件的连词（短语）.html" target="_blank">
-          G001 表达条件的连词（短语）
-        </a>
-      </li>
-      <li>
-        <a href="G002 强调结构（WIP）.html" target="_blank">
-          G002 强调结构（WIP） 
-        </a>
-      </li>
-      <li>
-        <a href="G003 表达未来时间的介词.html" target="_blank">
-          G003 表达未来时间的介词
-        </a>
-      </li>
-      <li>
-        <a href="G004代词.html" target="_blank">
-          G004 代词
-        </a>
-      </li>
-      <li>
-        <a href="G005 代动词（WIP）.html" target="_blank">
-          G005 代动词（WIP）
-        </a>
-      </li>
-      <li>
-        <a href="G006 什么时候必须联诵? 什么时候禁止联诵?（WIP）.html" target="_blank">
-          G006 什么时候必须联诵? 什么时候禁止联诵?（WIP）
-        </a>
-      </li>
-      <li>
-        <a href="G007 否定结构（WIP）.html" target="_blank">
-          G007 否定结构（WIP）
-        </a>
-      </li>
-      <li>
-        <a href="G008 虚拟式的用法.html" target="_blank">
-          G008 虚拟式的用法
-        </a>
-      </li>
-      <li>
-        <a href="G009 直陈式的用法.html" target="_blank">
-          G009 直陈式的用法
-        </a>
-      </li>
-      <li>
-        <a href="G010 直陈式 先将来时 (Indicatif Futur Antérieur) 用法.html" target="_blank">
-          G010 直陈式 先将来时 (Indicatif Futur Antérieur) 用法
-        </a>
-      </li>
-      <li>
-        <a href="G011 直陈式 简单过去时 (Indicatif Passé Simple) 用法.html" target="_blank">
-          G011 直陈式 简单过去时 (Indicatif Passé Simple) 用法
-        </a>
-      </li>
-      <li>
-        <a href="G012 条件式的用法.html" target="_blank">
-          G012 条件式的用法
-        </a>
-      </li>
-      <li>
-        <a href="G013 疑问句的倒装.html" target="_blank">
-          G013 疑问句的倒装
-        </a>
-      </li>
-      <li>
-        <a href="G014 被动结构.html" target="_blank">
-          G014 被动结构
-        </a>
-      </li>
-      <li>
-        <a href="G015 询问和回答原因和结果.html" target="_blank">
-          G015 询问和回答原因和结果
-        </a>
-      </li>
-      <li>
-        <a href="G016 转折或对比词.html" target="_blank">
-          G016 转折或对比词
-        </a>
-      </li>
-      <li>
-        <a href="G017 感叹句.html" target="_blank">
-          G017 感叹句
-        </a>
-      </li>
-      <li>
-        <a href="G018 几分之几的表达.html" target="_blank">
-          G018 几分之几的表达
-        </a>
-      </li>
-      <li>
-        <a href="G019 动词 + à:de + inf..html" target="_blank">
-          G019 动词 + à/de + inf.
-        </a>
-      </li>
-      <li>
-        <a href="G020 发音.html" target="_blank">
-          G020 发音
-        </a>
-      </li>
-      <li>
-        <a href="G021 补语.html" target="_blank">
+          </a>
+        </li>
+        <li>
+          <a href="G022 数字.html" target="_blank">
 
-        </a>
-      </li>
-      <li>
-        <a href="G022 数字.html" target="_blank">
+          </a>
+        </li>
+        <li>
+          <a href="G023 禁止和允许.html" target="_blank">
 
-        </a>
-      </li>
-      <li>
-        <a href="G023 禁止和允许.html" target="_blank">
+          </a>
+        </li>
+        <li>
+          <a href="G024 时态辨析.html" target="_blank">
 
-        </a>
-      </li>
-      <li>
-        <a href="G024 时态辨析.html" target="_blank">
+          </a>
+        </li>
+        <li>
+          <a href="G025 信件.html" target="_blank">
+            G025 信件
+          </a>
+        </li>
+        <li>
+          <a href="G026 关系代词.html" target="_blank">
+            G026 关系代词
+          </a>
+        </li>
+        <li>
+          <a href=".html" target="_blank">
 
-        </a>
-      </li>
-      <li>
-        <a href="G025 信件.html" target="_blank">
-          G025 信件
-        </a>
-      </li>
-      <li>
-        <a href="G026 关系代词.html" target="_blank">
-          G026 关系代词
-        </a>
-      </li>
-      <li>
-        <a href=".html" target="_blank">
+          </a>
+        </li>
+        <li>
+          <a href=".html" target="_blank">
 
-        </a>
-      </li>
-      <li>
-        <a href=".html" target="_blank">
+          </a>
+        </li>
 
-        </a>
-      </li>
+      </ol>
+    </div>
 
-    </ol>
-      
   </body>
 </html>
