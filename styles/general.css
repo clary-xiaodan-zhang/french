@@ -4,6 +4,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.td-left td {
+  text-align: left;
+}
+
 h1 {
   text-align: center;}
 
@@ -11,7 +15,10 @@ a {
   color: inherit; }
 
 table {
-  margin: 20px 1px; border: 2px solid gray; 
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border: 2px solid gray; 
   border-collapse: collapse; 
   padding: 3px 10px; 
   text-align: center; 
@@ -31,6 +38,7 @@ th {
 }
 
 button {
+  margin-bottom: 10px;
   border: 2px solid; 
   background-color: lightgray; 
   color: white; padding: 15px 20px; 
@@ -53,6 +61,8 @@ button:hover {
   text-align: left;
 }
 
+
+
 /* Style for the header */
 .header {
   padding: 8px 16px;
@@ -73,3 +83,38 @@ button:hover {
 .sticky + .content {
   padding-top: 102px;
 } 
+
+
+/* Style for lists with different levels of indentation */
+ul {
+  padding-left: 30px;
+}
+
+.custom-list {
+  list-style-type: disc;
+  padding-left: 0px;
+}
+
+.custom-list li {
+  margin-left: -10px; /* Adjust the indentation level by changing this value */
+  position: relative;
+}
+
+.custom-list ul {
+  margin-top: 3px; /* Adjust the spacing between nested lists */
+}
+
+
+/* To make two tables appear in the same row */
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  /* Change layout for smaller screens */
+  .container {
+    flex-direction: column;
+  }
+}
