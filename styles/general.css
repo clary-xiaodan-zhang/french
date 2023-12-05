@@ -11,6 +11,10 @@
 h1 {
   text-align: center;}
 
+h3 {
+  font-style: italic;
+}
+
 a {
   color: inherit; }
 
@@ -68,6 +72,19 @@ button:hover {
   padding: 8px 16px;
   background: #555;
   color: #f1f1f1;
+}
+.anchor {
+  display: block;
+  height: 20px; /* Same as your header's height */
+  margin-top: -20px; /* Negative margin of the same value */
+  visibility: hidden; /* Make the element invisible */
+  /* The .anchor element is given a height of 60px (or another height).
+  Normally, this would add 60 pixels of space to your layout. 
+  However, by also applying a margin-top of -60px, you are effectively pulling the element up by 60 pixels.
+  This upward pull counteracts the space added by its height. 
+  As a result, the .anchor element does not consume any additional vertical space in the layout
+  - it occupies 60 pixels of height, but simultaneously pulls itself up by 60 pixels.
+  Visually, it's as if the .anchor element is sitting 'on top' of the content above it, rather than pushing that content down and creating extra space.*/
 }
 /* Page content */
 .content {
