@@ -118,3 +118,7 @@ ul {
     flex-direction: column;
   }
 }
+
+.box {
+  margin: 5px;
+}
